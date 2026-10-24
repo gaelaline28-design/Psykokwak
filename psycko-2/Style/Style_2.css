@@ -1,0 +1,90 @@
+
+
+/* ==========================================
+   STYLE DU BODY / MAIN (Réponses aux points 1, 2 et 3)
+   ========================================== */
+
+/* ------------------------------------------
+   Point 1 : Changer la police, la couleur et la taille des textes
+   ------------------------------------------ */
+.texte-migraine {
+    font-family: 'Arial', sans-serif; /* Modification de la police */
+    font-size: 30px;                 /* Modification de la taille */
+    color: #ee2525;                /* Modification de la couleur */
+    font-weight: bold;               /* Mise en gras */
+    text-align: center;              /* Centrage du texte */
+    margin-bottom: 50px;            
+}
+
+.texte-atif {
+    font-family: 'Georgia', serif;   /* Autre police possible */
+    font-size: 25px;                /* Taille du texte */
+    color: #333333;               /* Couleur du texte */
+    margin-top: 0;                  /*plus d'espace au-dessus du texte */
+    margin-bottom: 50px;            /* plus d'espace en dessous du texte */
+}
+
+/* ------------------------------------------
+   Point 2 : Écarter l'espace entre les dessins (images)
+   ------------------------------------------ */
+.conteneur-images {
+    display: flex;       /* Aligne les 2 images côte à côte */
+    gap: 20px;           /* Règle l'écartement entre les images */
+    margin-bottom: 25px; /* Espace sous le bloc d'images */
+}
+
+.taille-image-2 {
+    width: 250px;        /* Largeur fixe pour harmoniser les deux images */
+    height: 250px;       /* Hauteur fixe pour former des carrés identiques */
+    object-fit: cover;   /* Évite de déformer l'image */
+    border-radius: 8px;  /* Optionnel : arrondit légèrement les coins */
+}
+
+/* ------------------------------------------
+   Point 3 : Faire un bloc / tableau en-dessous
+   ------------------------------------------ */
+.description {
+    border: 1px solid #080808; /* Bordure noire autour de l'ensemble du bloc */
+    padding: 20px;             /* Marge interne pour ne pas coller au bord */
+    display: flex;             /* Mettre le texte à gauche et la zone de texte à droite */
+    align-items: center;       /* Aligner verticalement au centre */
+    gap: 20px;                 /* Espace entre le texte rouge et le champ de saisie */
+    max-width: 550px;          /* Largeur maximale du cadre */
+    margin-bottom: 25px; /* Espace sous le bloc d'images */
+    background-color: #4d749c;
+}
+
+.texte-description {
+    color: #171617;            /* En noir pour la description du pokemon */
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+
+
+.cadre-avis {
+    border: 1px solid #000000; /* Bordure noire autour de l'ensemble du bloc */
+    padding: 20px;             /* Marge interne pour ne pas coller au bord */
+    display: flex;             /* Mettre le texte à gauche et la zone de texte à droite */
+    align-items: center;       /* Aligner verticalement au centre */
+    gap: 20px;                 /* Espace entre le texte rouge et le champ de saisie */
+    max-width: 550px;          /* Largeur maximale du cadre */
+}
+
+.texte-avis {
+    color: #cc0000;            /* Rouge pour le texte "Dis-moi ce que tu penses" */
+    font-weight: bold;
+    font-size: 16px;
+    width: 140px;              /* Largeur fixe pour le texte à gauche */
+}
+
+.champ-avis {
+    flex: 1;                   /* Le champ prend le reste de la largeur disponible */
+    height: 80px;              /* Hauteur de la zone de saisie */
+    padding: 10px;
+    border: 1px solid #a6a6a6; /* Bordure grise de la zone de texte */
+    border-radius: 8px;        /* Coins arrondis de la zone de saisie */
+    resize: vertical;          /* Permet de redimensionner uniquement en hauteur */
+    font-family: sans-serif;
+}

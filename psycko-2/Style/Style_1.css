@@ -1,0 +1,90 @@
+
+header {
+    width: 100%;
+}
+body {
+    margin: 0;   /* Supprime la marge par défaut du navigateur */
+    padding: 0;  /* Supprime le remplissage par défaut */
+    background-color: #266ea8b7;  /* Fond blanc */
+   }
+.contenu-principal {
+ padding-left: 10px; /* Modifie la valeur de la marge gauche (ex: 50px, 10%) selon l'espace souhaité */
+}
+
+/* --------------------------------------------------
+   1. LE CADRE PRINCIPAL
+   -------------------------------------------------- */
+.cadre-principal {
+    border: 10px solid rgb(224, 220, 220);    /* Bordure noire opaque */
+    padding: 20px;              /* Espace à l'intérieur du cadre */
+    border-radius: 12px;        /* Coins arrondis (optionnel) */
+    background-color: #28a826b7;  /* Fond blanc */
+    /*max-width: 600px;           /* Largeur maximale de la boîte */
+    /*margin: 20px auto;          /* Centre le cadre dans la page */
+    width: 100%;                    /* Prend toute la largeur disponible */
+    box-sizing: border-box;         /* Empêche le padding de faire dépasser le cadre de l'écran */
+    margin: 0;                      /* Supprime les marges extérieures pour coller aux bords */
+}
+
+/* Changer la taille du texte du lien "Index" */
+.cadre-principal section ul li a {
+    
+}
+
+/* Centrage du grand titre */
+.titre-principal.centrage {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* --------------------------------------------------
+   2. ALIGNEMENT DU SOUS-TITRE ET DE L'IMAGE
+   -------------------------------------------------- */
+.conteneur-sous-titre {
+    display: flex;              /* Active Flexbox pour mettre côte à côte */
+    align-items: center;        /* Aligne le texte et l'image verticalement */
+    justify-content: center;   /* Centre l'ensemble au milieu du cadre */
+    gap: 15px;                  /* Espace entre le sous-titre et l'image */
+    margin-top: 15px;
+}
+
+/* Style du sous-titre */
+.sous-titre {
+    margin: 0;                  /* Supprime la marge par défaut pour un alignement parfait */
+    
+}
+
+/* Taille de l'image */
+.taille-image {
+    width: 50px;                /* Ajuste la largeur selon les besoins */
+    height: auto;               /* Garde les proportions */
+}
+
+créer une ligne horizontale sous la barre de titre */
+.ligne-bas {
+    border: none;             /* Efface le style gris par défaut du navigateur */
+    height: 100px;              /* Épaisseur de la ligne */
+    background-color: black;  /* Couleur noire opaque */
+    margin-top: 20px;         /* Espace entre le contenu du dessus et la ligne */
+    margin-bottom: 0;
+}
+
+
+/* Style pour tous les liens situés en DEHORS du header */
+:not(header) a {
+    color: #0066cc;            /* Change la couleur du lien (ex: un beau bleu) */
+    font-size: 20px;           /* Change la taille du texte */
+    font-family: Arial, sans-serif; /* Change la police */
+    text-decoration: none;     /* Supprime le soulignement (optionnel) */
+    font-weight: bold;         /* Met le texte en gras (optionnel) */
+}
+
+//* --------------------------------------------------
+   3. présentation du texte des liens
+   -------------------------------------------------- */
+/* Effet lorsqu'on passe la souris sur ces liens (optionnel) */
+:not(header) a:hover {
+    color: #ff6600;            /* Change la couleur au survol de la souris */
+    text-decoration: underline;  /* Remet le soulignement au survol */
+    font-size: 30px;             /* Modifiez cette valeur selon vos besoins (ex: 14px, 18px, 1.2rem...) */
+}

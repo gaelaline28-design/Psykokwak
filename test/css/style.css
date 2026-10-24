@@ -1,0 +1,66 @@
+/* --------------------------------------------------
+   1. STYLES GÉNÉRAUX (pour centrer la box dans la page)
+   -------------------------------------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #41e757; /* Couleur de fond légère */
+    display: flex;
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement */
+    min-height: 100vh;         /* Prend toute la hauteur de l'écran */
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   2. CONTENEUR PRINCIPAL (La Box)
+   -------------------------------------------------- */
+.feedback-box {
+    background-color: #ffffff;  /* Fond blanc pour le conteneur */
+    padding: 20px;              /* Espacement interne */
+    border-radius: 12px;        /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce pour l'effet de relief */
+    
+    /* Disposition côte à côte grâce à Flexbox */
+    display: flex;
+    align-items: center;        /* Aligne le texte et la zone de texte verticalement au centre */
+    gap: 20px;                  /* Espace entre le texte à gauche et la zone à droite */
+    
+    max-width: 600px;           /* Largeur maximale de la boîte */
+    width: 90%;                 /* S'adapte sur les petits écrans */
+}
+
+/* --------------------------------------------------
+   3. TEXTE À GAUCHE
+   -------------------------------------------------- */
+.feedback-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e32121;             /* Couleur du texte foncé */
+    flex: 1;                    /* Permet au texte d'occuper l'espace disponible à gauche */
+}
+
+/* --------------------------------------------------
+   4. ZONE D'ÉCRITURE À DROITE (Textarea)
+   -------------------------------------------------- */
+.feedback-textarea {
+    flex: 2;                    /* Prend plus de place que le texte (2/3 de l'espace) */
+    height: 80px;               /* Hauteur du champ de texte */
+    padding: 10px 12px;         /* Marge interne pour ne pas coller le texte aux bords */
+    
+    border: 1.5px solid #190852;/* Bordure fine grise */
+    border-radius: 8px;         /* Coins légèrement arrondis */
+    
+    font-family: inherit;       /* Utilise la même police que le reste de la page */
+    font-size: 0.95rem;
+    color: #333333;
+    
+    resize: vertical;           /* Permet à l'utilisateur de redimensionner uniquement en hauteur */
+    outline: none;              /* Enlève la bordure bleue par défaut du navigateur */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animation douce lors du clic */
+}
+
+/* Effet visuel quand l'utilisateur clique dans la zone de texte (Focus) */
+.feedback-textarea:focus {
+    border-color: #c62230;      /* Change la couleur de la bordure en bleu */
+    /*box-shadow: 0 0 5px rgba(127, 84, 84, 0.806); /* Ajoute un halo bleu léger */
+}
