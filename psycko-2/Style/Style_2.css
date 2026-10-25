@@ -7,7 +7,28 @@
 /* ------------------------------------------
    Point 1 : Changer la police, la couleur et la taille des textes
    ------------------------------------------ */
-.texte-migraine {
+   .Pourquoi-Psykokwak{
+    font-family: 'Arial', sans-serif; /* Modification de la police */
+    font-size: 50px;                 /* Modification de la taille */
+    color: #ee2525;                /* Modification de la couleur */
+    font-weight: bold;               /* Mise en gras */
+    text-align: center;              /* Centrage du texte */
+    margin-bottom: 50px
+}
+
+   .Raison {
+    font-family: 'Arial', sans-serif; /* Modification de la police */
+    font-size: 40px;                 /* Modification de la taille */
+    color: #25ee50;                /* Modification de la couleur */
+    font-weight: bold;               /* Mise en gras */
+    font-style: italic;              /* Mise en italique */
+    text-decoration: underline double; /* Double soulignement du texte */
+    text-align: center;              /* Centrage du texte */
+    margin-bottom: 50px
+}
+
+
+   .texte-migraine {
     font-family: 'Arial', sans-serif; /* Modification de la police */
     font-size: 30px;                 /* Modification de la taille */
     color: #ee2525;                /* Modification de la couleur */
@@ -17,11 +38,14 @@
 }
 
 .texte-atif {
-    font-family: 'Georgia', serif;   /* Autre police possible */
-    font-size: 25px;                /* Taille du texte */
-    color: #333333;               /* Couleur du texte */
-    margin-top: 0;                  /*plus d'espace au-dessus du texte */
-    margin-bottom: 50px;            /* plus d'espace en dessous du texte */
+    font-family: 'Arial', sans-serif; /* Modification de la police */
+    font-size: 40px;                 /* Modification de la taille */
+    color: #25ee50;                /* Modification de la couleur */
+    font-weight: bold;               /* Mise en gras */
+    font-style: italic;              /* Mise en italique */
+    text-decoration: underline double; /* Double soulignement du texte */
+    text-align: center;              /* Centrage du texte */
+    margin-bottom: 50px
 }
 
 /* ------------------------------------------
@@ -29,13 +53,14 @@
    ------------------------------------------ */
 .conteneur-images {
     display: flex;       /* Aligne les 2 images côte à côte */
-    gap: 20px;           /* Règle l'écartement entre les images */
+    gap: 200px;           /* Règle l'écartement entre les images */
     margin-bottom: 25px; /* Espace sous le bloc d'images */
+    justify-content: center;
 }
 
 .taille-image-2 {
-    width: 250px;        /* Largeur fixe pour harmoniser les deux images */
-    height: 250px;       /* Hauteur fixe pour former des carrés identiques */
+    width: 400px;        /* Largeur fixe pour harmoniser les deux images */
+    height: 400px;       /* Hauteur fixe pour former des carrés identiques */
     object-fit: cover;   /* Évite de déformer l'image */
     border-radius: 8px;  /* Optionnel : arrondit légèrement les coins */
 }
@@ -44,32 +69,35 @@
    Point 3 : Faire un bloc / tableau en-dessous
    ------------------------------------------ */
 .description {
-    border: 1px solid #080808; /* Bordure noire autour de l'ensemble du bloc */
-    padding: 20px;             /* Marge interne pour ne pas coller au bord */
-    display: flex;             /* Mettre le texte à gauche et la zone de texte à droite */
-    align-items: center;       /* Aligner verticalement au centre */
-    gap: 20px;                 /* Espace entre le texte rouge et le champ de saisie */
-    max-width: 550px;          /* Largeur maximale du cadre */
-    margin-bottom: 25px; /* Espace sous le bloc d'images */
-    background-color: #4d749c;
+    border: 1px solid #080808;    /* Bordure noire autour du bloc */
+    padding: 20px;                 /* Marge interne pour ne pas coller au bord */
+    max-width: 550px;              /* Largeur maximale du cadre */
+    margin-bottom: 25px;           /* Espace sous le bloc */
+    background-color: #4d749c;     /* Fond bleu */
+    /* Center le bloc horizontalement */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .texte-description {
-    color: #171617;            /* En noir pour la description du pokemon */
-    font-weight: bold;
-    font-size: 16px;
-    
+    margin: 0;                     /* Supprime les marges par défaut du paragraphe */
+    color: #ffffff;                /* Met le texte en blanc pour qu'il soit lisible sur fond bleu */
+    line-height: 1.5;              /* Aère les lignes */
 }
 
 
 
 .cadre-avis {
-    border: 1px solid #000000; /* Bordure noire autour de l'ensemble du bloc */
+    border: 4px solid #6b1616; /* Bordure noire autour de l'ensemble du bloc */
+    background-color: #94becfb7;  /* Fond vert */
     padding: 20px;             /* Marge interne pour ne pas coller au bord */
     display: flex;             /* Mettre le texte à gauche et la zone de texte à droite */
     align-items: center;       /* Aligner verticalement au centre */
     gap: 20px;                 /* Espace entre le texte rouge et le champ de saisie */
     max-width: 550px;          /* Largeur maximale du cadre */
+    /* Center le bloc horizontalement */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .texte-avis {

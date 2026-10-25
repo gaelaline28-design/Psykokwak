@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psykokwak</title>
-    <link rel="stylesheet" href="Style/Style_1.css">
+    <title>Psykokwak</title> <!-- Titre de l'onglet du navigateur -->
+
+    <!-- Les liens vers les fichiers CSS utilisé pour le style de la page -->
+    <link rel="stylesheet" href=".\Style\style_1.css">
+    <link rel="stylesheet" href="./Style/Style_2.css">
 </head>
+<!-- ____________________________________________________________________________________________________________ -->
 
 <!-- Création de ma barre de  Titre avec un sous-titre et une image -->
 <header>
@@ -25,15 +29,15 @@
             </h2>
 
             <!-- Insertion de l'image -->
-            <img src="./Images/psykokwak.jpg" alt="Description de l'image" class="taille-image">
+            <img src="../psycko-2/Images/psykokwak.jpg" alt="Description de l'image" class="taille-image">
         </div>
-       
     </div>
-     
 </header>
-
-<div class="contenu-principal">
-<!--____________________________________________________________________________________________________ -->
+<!-- ____________________________________________________________________________________________________________ -->
+ 
+<!--permet de mettre une marge à gauche de la page pour que le texte ne soit pas collé au bord de l'écran. Cela améliore la lisibilité et l'esthétique de la page-->
+<div class="contenu-principal"> 
+<!-- ____________________________________________________________________________________________________________ -->
 
  <!-- section 2 liens des paragraphe -->
 <section>
@@ -42,32 +46,38 @@
         <li><a href="#Ressources">Ressources</a></li>
     </ul>
 </section>
-
-<!--____________________________________________________________________________________________________ -->
-
+<!-- ____________________________________________________________________________________________________________ -->
 
 <body>
-    <!-- un sous titre -->
-    <h2>Pourquoi Psykokwak</h2>
-
+        <!-- un sous titre -->
+      <h2 class="Pourquoi-Psykokwak">Pourquoi Psykokwak ?</h2>     
+  
     <!-- la raison -->
-    <p>principalement parce qu'il est trop fort il évolu en Akwakwak</p>
+    <h3 class="Raison">principalement parce qu'il est trop fort il évolu en Akwakwak !!!</h3>
 
      <!-- insération d'images  -->  
       <!-- image à centrer  -->
-    <img src="./Images/akwakak.jpg" alt="Description de l'image">
-    
+
+            <section class="conteneur-images">
+                <img src="./Images/akwakak.jpg" alt="akwakak" class="taille-image-2">
+            </section>
+
+
+     <!-- 3. Bloc avec texte et champ de saisie (Cadre / Tableau en-dessous) -->
+    <section class="description">
+            <p class="texte-description"> Akwakwak est une créature bipède bleue à bec de canard. Ses doigts sont griffus et palmés. Il en a trois à chaque main et quatre à chaque pied (dont un doigt orienté vers l'arrière). Un joyau rouge figure sur son front. Il possède quatre larges pics sur le sommet du crâne, et une longue queue en pointe..<br><br> 
+                <!-- <br>permet de faire un retour à la ligne dans le texte pour séparer les phrases et améliorer la lisibilité. Cela permet de créer un espace visuel entre les différentes parties du texte, ce qui facilite la lecture et la compréhension du contenu. -->
+                
+        Dans Légendes Pokémon : Arceus, ce Pokémon a par défaut un comportement agressif et attaque le protagoniste dès qu'il le voit.
+            </p>              
+    </section>    
 </body>
+<!-- ____________________________________________________________________________________________________________ -->
 
-
-
-
-
-
-<!-- Création de pied de page -->
 <footer>
-    <h2 id="Ressources"></h2>
+     <h2 id="Ressources"></h2> <!--permet de créer un encrage pour le lien "Ressources" dans la section au-dessus. Cela permet aux utilisateurs de cliquer sur le lien et d'être dirigés directement vers cette section qui se situe au pied de page. -->
     <p>© 2026 — Ressource pédagogique Simplon</p>
     <p>contact@exemple.com</p>
 </footer>
 </html>
+
